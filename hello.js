@@ -4,8 +4,7 @@ function hello() {
   return 'hello ' + Array.prototype.join.call(arguments, ' ')
 }
 
-var greetings = phunction(hello);
+var hello = phunction(hello);
 
-console.log(hello(), 'hello() === greetings()', hello() === greetings())
-console.log(hello('world'), "hello('world') === greetings.world()", hello('world') === greetings.world())
-console.log(hello('good', 'friend'), "hello('good','friend') === greetings.good('friend')", hello('good','friend') === greetings.good('friend'))
+console.log( "hello('world') === hello.world()", hello('world') === hello.world())
+console.log("hello('good','friend') === hello.good('friend')", hello('good','friend') === hello.good('friend'))
